@@ -31,10 +31,10 @@ It utilizes several key components:
     - Creation of insightful dashboards for data exploration and communication.
     - Integration with Azure Synapse Analytics for direct data access.
 
-## Components2 ##
+## Project details ##
 The project focuses on the 2021 Olympics dataset, encompassing details of over 11,000 athletes in 47 sports, representing 743 teams at the Tokyo Olympics. The dataset comprises information on teams, athletes, coaches, entries by gender, and includes attributes such as names, nationalities, sports, and coach names. The dataset is divided into five files: Athletes, Coaches, EntriesGender, Medals, and Teams.
 
-### Components ###
+### Approach ###
 
 1. Create an Azure Storage account and upload data files to a container.
 2. Establish an Azure Synapse Analytics workspace.
