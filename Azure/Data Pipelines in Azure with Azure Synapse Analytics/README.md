@@ -31,6 +31,10 @@ It utilizes several key components:
     - Creation of insightful dashboards for data exploration and communication.
     - Integration with Azure Synapse Analytics for direct data access.
 
-## Project details
+## Project details 
 
 ## Related resources
+- Azure Synapse Analytics: https://docs.microsoft.com/en-us/azure/synapse-analytics/: https://docs.microsoft.com/en-us/azure/synapse-analytics/
+- Azure Data Factory: https://docs.microsoft.com/en-us/azure/data-factory/: https://docs.microsoft.com/en-us/azure/data-factory/
+- Azure Storage: https://docs.microsoft.com/en-us/azure/storage/: https://docs.microsoft.com/en-us/azure/storage/
+- Power BI: https://docs.microsoft.com/en-us/power-bi/: https://docs.microsoft.com/en-us/power-bi/
