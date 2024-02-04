@@ -1,5 +1,5 @@
 # Data Pipelines in Azure with Azure Synapse Analytics
-
+In this initiative, we aim to construct a workflow within the Azure environment, leveraging Azure Synapse Analytics, Azure Storage, and Power BI. The objective is to conduct comprehensive data analysis on the dataset pertaining to the 2021 Olympics.
 
 ## Architecture
 The following diagram illustrates data pipeline for analyzing the 2021 Olympics dataset with Azure Synapse Analytics.
@@ -31,10 +31,22 @@ It utilizes several key components:
     - Creation of insightful dashboards for data exploration and communication.
     - Integration with Azure Synapse Analytics for direct data access.
 
-## Project details 
+## Project details
+The project focuses on the 2021 Olympics dataset, encompassing details of over 11,000 athletes in 47 sports, representing 743 teams at the Tokyo Olympics. The dataset comprises information on teams, athletes, coaches, entries by gender, and includes attributes such as names, nationalities, sports, and coach names. The dataset is divided into five files: Athletes, Coaches, EntriesGender, Medals, and Teams.
+
+### Approach
+
+1. Create an Azure Storage account and upload data files to a container.
+2. Establish an Azure Synapse Analytics workspace.
+3. Create a SQL pool in the Azure Synapse workspace.
+4. Design table structures within the SQL pool.
+5. Develop a data pipeline for ingesting data from Azure Storage into SQL pool tables.
+6. Load data from SQL pool tables into Power BI.
+7. Prepare a comprehensive dashboard in Power BI.
+8. Publish the Power BI dashboard in the Azure Synapse workspace.
 
 ## Related resources
-- Azure Synapse Analytics: https://docs.microsoft.com/en-us/azure/synapse-analytics/: https://docs.microsoft.com/en-us/azure/synapse-analytics/
-- Azure Data Factory: https://docs.microsoft.com/en-us/azure/data-factory/: https://docs.microsoft.com/en-us/azure/data-factory/
-- Azure Storage: https://docs.microsoft.com/en-us/azure/storage/: https://docs.microsoft.com/en-us/azure/storage/
-- Power BI: https://docs.microsoft.com/en-us/power-bi/: https://docs.microsoft.com/en-us/power-bi/
+- Azure Synapse Analytics: https://docs.microsoft.com/en-us/azure/synapse-analytics/
+- Azure Data Factory: https://docs.microsoft.com/en-us/azure/data-factory/
+- Azure Storage: https://docs.microsoft.com/en-us/azure/storage/
+- Power BI: https://docs.microsoft.com/en-us/power-bi/
