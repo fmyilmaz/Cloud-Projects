@@ -21,7 +21,7 @@ resource "aws_s3_bucket" "my_bucket" {
     bucket = "data-lake-steam-projects01" # name of the bucket
     acl    = "private" # access control list
     tags = {
-        Name = "ata-lake-steam-projects01" # name of the bucket
+        Name = "data-lake-steam-projects01" # name of the bucket
         created_by = "firatmelihyilmaz" # created by terraform
         environment = "production" # environment name
     }
