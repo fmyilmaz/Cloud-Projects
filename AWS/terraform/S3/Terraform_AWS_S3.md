@@ -94,3 +94,8 @@ terraform destroy
 
 Confirm the action when prompted to avoid leaving unused resources.
 
+echo "# Mental Health in Tech Survey
+TODO: write executive summary.
+TODO: include link to raw data.
+TODO: remember to cite funding sources!
+TODO: Add data visualizations." > report.md
