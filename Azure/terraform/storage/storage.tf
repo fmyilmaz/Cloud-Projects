@@ -14,13 +14,14 @@ terraform {
 # provider block
 provider "azurerm" {
   features {}
+  subscription_id = "894400d6-314d-4748-887c-867cc0285e2c"
 }
 
 # resource block
 resource "azurerm_storage_account" "storage_account" {
-  name                     = "data-lake-steam-projects01"
-  resource_group_name      = azurerm_resource_group.resource_group.name
-  location                 = azurerm_resource_group.resource_group.location
+  name                     = "datalakesteamprojects01"
+  resource_group_name      = "data-lake-rg"
+  location                 = "East US"
   account_tier             = "Standard"
   account_replication_type = "LRS"
   tags = {
