@@ -34,6 +34,10 @@ jobs:
 
       - name: Terraform Plan
         run: terraform -chdir=AWS/terraform/EC2/ plan
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-1'
 
       - name: Terraform Apply
         run: terraform -chdir=AWS/terraform/EC2/ apply -auto-approve

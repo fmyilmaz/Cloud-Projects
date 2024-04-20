@@ -12,8 +12,6 @@ terraform {
 # provider block
 provider "aws" {
     region = "us-east-1" # region where the resources will be created
-    profile = "default" # profile name from ~/.aws/credentials file
-  
 }
 
 # resource block
