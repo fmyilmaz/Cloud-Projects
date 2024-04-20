@@ -22,6 +22,7 @@ resource "aws_instance" "my_instance" {
         Name = "my-instance" # tag name
         Environment = "dev" # tag value
         created_by = "firatmelihyilmaz" # tag value
+        Department = "IT" # tag value
     }
   
 }
