@@ -30,10 +30,10 @@ jobs:
           terraform_version: "1.0.0"
 
       - name: Terraform Init
-        run: terraform init
+        run: terraform init AWS/terraform/EC2/ec2_instance.tf
 
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan AWS/terraform/EC2/ec2_instance.tf
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
