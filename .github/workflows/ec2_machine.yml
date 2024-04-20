@@ -30,13 +30,13 @@ jobs:
           terraform_version: "1.0.0"
 
       - name: Terraform Init
-        run: terraform init AWS/terraform/EC2/ec2_instance.tf
+        run: terraform -chdir=AWS/terraform/EC2/ init
 
       - name: Terraform Plan
-        run: terraform plan AWS/terraform/EC2/ec2_instance.tf
+        run: terraform -chdir=AWS/terraform/EC2/ plan
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve
+        run: terraform -chdir=AWS/terraform/EC2/ apply -auto-approve
         env:
           TF_VAR_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           TF_VAR_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
