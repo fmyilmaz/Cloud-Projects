@@ -1,11 +1,13 @@
 name: 'Deploy EC2 Instance with Terraform'
 
 on:
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [ main ]
     paths:
       - 'AWS/terraform/EC2/ec2_instance.tf'
+    pull_request:
+      branches: [ main ]
 
 jobs:
   terraform:
@@ -19,7 +21,7 @@ jobs:
       AWS_DEFAULT_REGION: 'us-east-1'
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Terraform
