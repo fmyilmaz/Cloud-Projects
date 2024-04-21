@@ -18,7 +18,7 @@ provider "aws" {
 resource "aws_glue_job" "glue_job" {
     name = "raw_data_processing_job" # name of the glue job
     description = "gather data from source and process it" # description of the glue job
-    role_arn = aws_iam_role.glue_service_role.arn # arn of the glue service role
+    role_arn = "arn:aws:iam::471112935345:role/glue-service-role" # arn of the glue service role
     command {
         name = "glueetl" # name of the command
         script_location = "s3://aws-glue-assets-471112935345-us-east-1/scripts/glue_job.py" # location of the script
