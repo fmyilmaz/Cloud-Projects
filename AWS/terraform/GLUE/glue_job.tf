@@ -31,6 +31,7 @@ resource "aws_glue_job" "glue_job" {
         max_concurrent_runs = 1 # maximum concurrent runs
     }
     glue_version = "4.0" # glue version
+    number_of_workers = 2 # number of workers
     max_retries = 0 # maximum retries
     worker_type = "G.1X" # worker type
     security_configuration = "" # security configuration
