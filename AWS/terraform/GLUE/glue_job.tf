@@ -26,6 +26,15 @@ resource "aws_glue_job" "glue_job" {
     default_arguments = {
         "--job-language" = "python" # job language
         "--job-bookmark-option" = "job-bookmark-enable" # job bookmark option
+        "--enable-metrics" = "true" # enable metrics
+        "--enable-continuous-cloudwatch-log" = "true" # enable continuous cloudwatch log     
+        "--enable-spark-ui" = "true" # enable spark ui
+        "--enable-continuous-log" = "true" # enable continuous log
+        "--enable-auto-scaling" = "true" # enable auto scaling
+        "--enable-auto-stop" = "true" # enable auto stop
+        "--enable-job-insights" = "true" # enable job insights
+        "--enable-debugging" = "true" # enable debugging
+        "--enable-spark-auto-termination" = "true" # enable spark auto termination
     }
     execution_property {
         max_concurrent_runs = 1 # maximum concurrent runs
