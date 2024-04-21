@@ -1,4 +1,4 @@
-name: 'Deploy EC2 Instance with Terraform'
+name: 'Create IAM Role for Glue Service with Terraform'
 
 on:
   workflow_dispatch:
