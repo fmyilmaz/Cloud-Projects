@@ -33,10 +33,6 @@ resource "aws_iam_role" "glue_service_role" {
             "Sid": ""
         }
     ]
-    tags = {
-        Name = "glue-service-role"
-        created_by = "firatmelihyilmaz"
-        environment = "production"
 }
 EOF
 }
