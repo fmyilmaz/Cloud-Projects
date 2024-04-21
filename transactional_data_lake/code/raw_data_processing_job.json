@@ -1,0 +1,41 @@
+{
+  "name" : "raw_data_processing_job",
+  "jobMode" : "SCRIPT",
+  "description" : "gather data from source and process it",
+  "role" : "arn:aws:iam::471112935345:role/glue-service-role",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueetl",
+    "scriptLocation" : "s3://aws-glue-assets-471112935345-us-east-1/scripts/glue_job.py",
+    "pythonVersion" : "3"
+  },
+  "defaultArguments" : {
+    "--enable-metrics" : "true",
+    "--enable-spark-ui" : "true",
+    "--enable-job-insights" : "true",
+    "--enable-auto-stop" : "true",
+    "--enable-continuous-cloudwatch-log" : "true",
+    "--enable-debugging" : "true",
+    "--job-bookmark-option" : "job-bookmark-enable",
+    "--enable-spark-auto-termination" : "true",
+    "--job-language" : "python",
+    "--enable-continuous-log" : "true",
+    "--enable-auto-scaling" : "true"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 2,
+  "timeout" : 2880,
+  "maxCapacity" : 2.0,
+  "glueVersion" : "4.0",
+  "numberOfWorkers" : 2,
+  "workerType" : "G.1X",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "Cloud-Projects",
+    "branch" : "main",
+    "folder" : "transactional_data_lake/code"
+  }
+}
