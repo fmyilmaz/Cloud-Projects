@@ -14,3 +14,16 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 job.commit()
+
+# COPY DATA FROM S3 TO S3
+arn:aws:s3:::nyc-tlc
+s3://nyc-tlc*
+
+
+# COPY DATA FROM S3 TO S3
+arn:aws:s3:::nyc-tlc
+
+# COPY DATA FROM S3 TO S3
+XXXXXXXXXXXXXXXXXXXXX
+s3://nyc-tlc*
+s3://nyc-tlc*
