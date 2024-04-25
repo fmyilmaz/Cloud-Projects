@@ -25,5 +25,8 @@ arn:aws:s3:::nyc-tlc
 
 # COPY DATA FROM S3 TO S3
 XXXXXXXXXXXXXXXXXXXXX
-s3://nyc-tlc*
+s3://nyc-tlc* 
+
+# COPY DATA FROM S3 TO S3
+XXXXXXXXXXXXXXXXXXXX
 s3://nyc-tlc*
