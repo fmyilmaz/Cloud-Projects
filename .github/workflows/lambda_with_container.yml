@@ -24,7 +24,8 @@ jobs:
 
     - name: Build, tag, and push Docker image to Amazon ECR
       run: |
-        docker build -t my-lambda-function -f AWS/lambda_with_container/Dockerfile .
+        cd AWS/lambda_with_container
+        docker build -t my-lambda-function -f Dockerfile .
         docker tag my-lambda-function:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_DEFAULT_REGION }}.amazonaws.com/my-lambda-function:latest
         docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_DEFAULT_REGION }}.amazonaws.com/my-lambda-function:latest
 
