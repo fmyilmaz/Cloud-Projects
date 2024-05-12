@@ -30,7 +30,7 @@ jobs:
 
     - name: Deploy Lambda function
       run: |
-        aws lambda update-function-code --function-name my-container-lambda \
+        aws lambda update-function-code --function-name container_lambda \
           --image-uri ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_DEFAULT_REGION }}.amazonaws.com/my-lambda-function:latest --region ${{ secrets.AWS_DEFAULT_REGION }}
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
