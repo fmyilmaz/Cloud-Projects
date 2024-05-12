@@ -19,7 +19,6 @@ provider "aws" {
 # resource block
 resource "aws_s3_bucket" "my_bucket" {
     bucket = "data-lake-steam-projects01" # name of the bucket
-    acl    = "private" # access control list
     tags = {
         Name = "data-lake-steam-projects01" # name of the bucket
         created_by = "firatmelihyilmaz" # created by terraform
