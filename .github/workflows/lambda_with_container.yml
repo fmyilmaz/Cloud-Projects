@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'AWS/terraform/lambda_with_container/**'
+      - 'AWS/lambda_with_container/**'
 
 jobs:
   build-and-deploy:
